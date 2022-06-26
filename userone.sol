@@ -23,9 +23,12 @@ contract Patient {
         string lastName; // last name
     }
     
+    // set patient status: sick, recovered, etc.
     function setStatus() external {}
     
+    // read patient status 
     function readStatus() external {}
     
+    // send information out to requesters
     function sendInformation() external {}
 }
