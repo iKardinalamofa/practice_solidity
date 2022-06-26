@@ -1,19 +1,29 @@
-// SPDX-License-Identifier: MIT
-// Patient Digital Assistant
+// SPDX-License-Identifier: Prometheus
+// Patient Digital Twin Assistant
 
 pragma solidity ^0.8.4;
 
 contract Patient {
-    // if you find yourself declaring too many variables,
+    // 
     // you need to use struct.
-
-    struct Patient {
-        address addr;
-        string name;
-    }
     
+    // patient's health status
     enum STATE {WELL, SICK, RECOVERED, HOSPITALIZED, MONITORING, }
     STATE state;
+    
+    // mode of payment for services received
+    enum PAYMENT {CASH, CARD, INSURANCE}
+    PAYMENT pay;
+
+    struct Patient {
+        address addr; // patient's identifier on ethereum
+        
+        STATE state; // patient's current status
+        PAYMENT pay; // mode of payment
+        
+        string firstName; // first name
+        string lastName; // last name
+    }
     
     function setStatus() external {}
     
