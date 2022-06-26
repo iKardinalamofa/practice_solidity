@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: Prometheus
+// SPDX-License-Identifier: Blockchain Institute, UESTC.
 // Patient Digital Twin Assistant
 
 pragma solidity ^0.8.4;
