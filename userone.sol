@@ -4,14 +4,12 @@
 pragma solidity ^0.8.4;
 
 contract Patient {
-    // 
-    // you need to use struct.
     
     // patient's health status
     enum STATE {WELL, SICK, RECOVERED, HOSPITALIZED, MONITORING, }
     STATE state;
     
-    // mode of payment for services received
+    // mode of payment
     enum PAYMENT {CASH, CARD, INSURANCE}
     PAYMENT pay;
 
