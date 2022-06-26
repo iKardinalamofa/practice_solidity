@@ -6,7 +6,7 @@ pragma solidity ^0.8.4;
 contract Patient {
     
     // patient's health status
-    enum STATE {WELL, SICK, RECOVERED, HOSPITALIZED, MONITORING, }
+    enum STATE {WELL, SICK, RECOVERED, HOSPITALIZED, MONITORING}
     STATE state;
     
     // mode of payment
