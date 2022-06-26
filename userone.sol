@@ -12,6 +12,9 @@ contract Patient {
         string name;
     }
     
+    enum STATE {WELL, SICK, RECOVERED, HOSPITALIZED, MONITORING, }
+    STATE state;
+    
     function setStatus() external {}
     
     function readStatus() external {}
